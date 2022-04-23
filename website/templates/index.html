@@ -30,17 +30,17 @@
 
 <div class="common_style">
 
-<!-- about section -->
-<section class="about_section">
+<!-- academics section -->
+<section class="academics_section">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="about_img-container">
+        <div class="academics_img-container">
           <img src="{% static 'assets/images/about.png' %}" alt="">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="about_detail-box">
+        <div class="academics_detail-box">
           <h3>
             Comprehensive Online Learning Program from class 4 to 9
           </h3>
@@ -59,14 +59,14 @@
 </section>
 
 
-<!-- end about section -->
+<!-- end academics section -->
 
-<!-- admission section -->
-<section class="admission_section">
+<!-- Engineering section -->
+<section class="Engineering_section">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="admission_detail-box">
+        <div class="Engineering_detail-box">
           <h3>
             Engineering
           </h3>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="admission_img-container">
+        <div class="Engineering_img-container">
           <img src="{% static 'assets/images/admission.png' %}" alt="">
         </div>
       </div>
@@ -91,19 +91,19 @@
 
 
 
-<!-- end admission section -->
+<!-- end Engineering section -->
 
-<!-- why section -->
-<section class="why_section">
+<!-- Medical section -->
+<section class="Medical_section">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="why_img-container">
+        <div class="Medical_img-container">
           <img src="{% static 'assets/images/why.png' %}" alt="">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="why_detail-box">
+        <div class="Medical_detail-box">
           <h3>
             Medical - NEET
           </h3>
@@ -122,14 +122,14 @@
 </section>
 
 
-<!-- end why section -->
+<!-- end Medical section -->
 
-<!-- determine section -->
-<section class="determine_section">
+<!-- customized section -->
+<section class="customized_section">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="determine_detail-box">
+        <div class="customized_detail-box">
           <h3>
             Customized Learning Program
           </h3>
@@ -144,7 +144,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="determine_img-container">
+        <div class="customized_img-container">
           <img src="{% static 'assets/images/determine.png' %}" alt="">
         </div>
       </div>
@@ -153,12 +153,10 @@
 </section>
 
 
-<!-- end determine section -->
+<!-- end customized section -->
 
 </div>
-
-
-<!-- client section -->
+<!-- Whats New section -->
 <section class="client_section layout_padding">
 <h2 class="">
   What's New on LearnlogiX
@@ -250,24 +248,13 @@
           <div class="col-md-6">
             <div class="d-flex justify-content-center d-md-block">
               <h2>
-                Contact Us
+                Register Now
               </h2>
             </div>
             <form action="">
               <div class="contact_form-container">
                 <div>
-                  <div>
-                    <input type="text" placeholder="Name">
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Phone Number">
-                  </div>
-                  <div class="mt-5">
-                    <input type="text" placeholder="Message">
-                  </div>
+                  {{leads}}
                   <div class="mt-5">
                     <button type="submit">
                       send

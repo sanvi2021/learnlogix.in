@@ -67,6 +67,7 @@ body {
 
 }
 
+
 nav.navbar.navbar-expand-lg {
 
   padding: 10px 0;
@@ -99,6 +100,7 @@ a:focus {
 .top_container {
   position: relative;
 }
+
 
 
 
@@ -247,53 +249,54 @@ a:focus {
 
 /* end common style */
 
-/* about section */
-.about_section {
+/* academics section */
+.academics_section {
   text-align: right;
 }
 
-.about_section a {
+.academics_section a {
   background-color: #6ebca8;
   color: #fefeff;
 }
 
-/* end about section */
 
-/* admission section */
+/* end academics section */
+
+/* Engineering section */
 
 
-.admission_section a {
+.Engineering_section a {
   background-color: #fdd31d;
   color: #fefeff;
 }
 
-/* end admission section */
+/* end Engineering section */
 
-/* why section */
+/* Medical section */
 
-.why_section {
+.Medical_section {
   text-align: right;
 }
 
-.why_section a {
+.Medical_section a {
   background-color: #6ebca8;
   color: #fefeff;
 }
 
-/* end why section */
+/* end Medical section */
 
-/* determine section */
+/* customized section */
 
 
-.determine_section a {
+.customized_section a {
   background-color: #fdd31d;
   color: #fefeff;
 }
 
 
-/* end determine section */
+/* end customized section */
 
-/* client section */
+/* Whats New section */
 .client_section h2,
 .client_section h5,
 .client_section p {
@@ -469,6 +472,10 @@ a:focus {
   padding: 5px 7px;
   border-bottom: 1.5px solid #fdd31d;
 }
+.info_logo-box .custom .custom_footer p {
+  color: #ccc8c8;
+  font-size: medium;
+}
 
 .info_section ul {
   padding: 0;
@@ -491,6 +498,7 @@ a:focus {
   margin-bottom: 12px;
   font-size: 22px;
 }
+
 
 
 
