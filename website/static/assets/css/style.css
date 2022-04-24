@@ -269,6 +269,14 @@ a:focus {
   background-color: #fdd31d;
   color: #fefeff;
 }
+.Engineering_section .baction{
+  background-color: #fdd31d;
+  color: #fefeff;
+}
+.Engineering_section .caction{
+  background-color: #3a3a3a;
+  color: #fefeff;
+}
 
 /* end Engineering section */
 
@@ -570,6 +578,14 @@ a:focus {
   background-color: #6ebca8;
   color: #fefeff;
 }
-
+.jumbo_contact{
+  background-color: #ffffff;
+  margin-block: 15px;
+}
+.jumbo_contact .row{
+  background-color: #9f9f9f1e;
+  
+  border-radius: 25px;
+}
 
 /* study-materials section */
