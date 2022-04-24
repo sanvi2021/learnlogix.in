@@ -4622,12 +4622,12 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 25px;
 }
 
 .card-header-tabs {

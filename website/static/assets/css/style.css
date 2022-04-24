@@ -472,10 +472,7 @@ a:focus {
   padding: 5px 7px;
   border-bottom: 1.5px solid #fdd31d;
 }
-.info_logo-box .custom .custom_footer p {
-  color: #ccc8c8;
-  font-size: medium;
-}
+
 
 .info_section ul {
   padding: 0;
@@ -498,10 +495,6 @@ a:focus {
   margin-bottom: 12px;
   font-size: 22px;
 }
-
-
-
-
 .info_section .form_container input {
   width: 225px;
   height: 40px;
@@ -510,12 +503,14 @@ a:focus {
 
 .info_section .form_container input::placeholder {
   color: #ccc8c8;
+  
 }
 
 .info_section .form_container button {
   background-color: #fdd31d;
-  border: none;
-  outline: none;
+  border: 2px;
+  border-radius: 25px;
+  outline:none;
   color: #fff;
   padding: 8px 30px;
   margin-top: 15px;
@@ -562,7 +557,19 @@ a:focus {
 .footer_section a {
   color: #fdfdfe;
 }
-
-
-
 /* end footer section*/
+
+/* Study-materials section */
+.study-materials {
+  text-align: center;
+  background-color: #f7f6f7;
+  
+}
+
+.study-materials a {
+  background-color: #6ebca8;
+  color: #fefeff;
+}
+
+
+/* study-materials section */

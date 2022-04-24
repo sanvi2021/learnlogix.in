@@ -12,11 +12,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
-  <title>Learnlogix</title>
-
-
-
+  {% block title %}{% endblock title %}
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.css' %}" />
   <!-- progress barstle -->
@@ -29,178 +25,23 @@
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
   <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
-
-
-
-
   <!-- <link rel="stylesheet" href="{% static 'assets/css/css-circular-prog-bar.css' %}"> -->
-
-
 </head>
 
 <body>
   <div class="top_container">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href=" ">
-            <span>
-              Learnlogix
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html"> Study Materials <span class="sr-only">(current)</span></a>
-                  
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> Scholarship </a>
-                </li>
-
-                <li class="nav-item ">
-                  <a class="nav-link" href="admission.html"> Buy a Course </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="call_to-btn btn_white-border" href="why.html"> Login </a>
-                </li>
-
-              </ul>
-            </div>
-        </nav>
-      </div>
-    </header>
-    {% block content %}{% endblock content %}
-
-
-  <!-- end client section -->
-
-
-
-      <section class="info_section layout_padding-top">
-        <div class="info_logo-box">
-          <h1 class ="display-4">
-              LearnlogiX 
-          </h1>
+    {% include 'navbar.html' %}
+    <div class= "container">
+      <div class = "row">
+        <div class ="col-sm-12">
+          {% block msg %}{% endblock msg %}          
         </div>
-          <div class="container layout_padding2">
-            <div class="row">
-              <div class="col-md-3">
-                <h5>
-                    Online Learning platform                                                                             
-                </h5>
-               <p class="text-muted">
-                   e - learning with logical approach
-               </p>
-              </div>
-              <div class="col-md-3">
-                <h4>
-                    Company
-                </h4>
-                <ul>
-                  <li>
-                    <a href="">
-                        About Us
-                    </a>
-                  </li>
-                  <li>
-                   <a href="">
-                      Contact Us
-                   </a>
-                  </li>
-                  <li>
-                    <a href="">
-                        Terms & consitions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                        Privacy & Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                        Child safety
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                        Careers
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h5>
-                    Contact Us
-                </h5>
-                <p>
-                    dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e 
-                </p>
-              </div>
-              <div class="col-md-3">
-           
-                <div class="subscribe_container">
-                  <h5>
-                      Newsletter
-                  </h5>
-                  <div class="form_container">
-                    <form action="">
-                      <input type="email" placeholder="Enter your email">
-                      <button type="submit">
-                        Subscribe
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="container">
-              <div class="social_container">
-                 
-                  <div class="social-box">
-                    <a href="">
-                      <img src="{% static 'assets/images/fb.png' %}" alt="">
-                    </a>
-      
-                    <a href="">
-                      <img src="{% static 'assets/images/twitter.png' %}" alt="">
-                    </a>
-                    <a href="">
-                      <img src="{% static 'assets/images/linkedin.png' %}" alt="">
-                    </a>
-                    <a href="">
-                      <img src="{% static 'assets/images/instagram.png' %}" alt="">
-                    </a>
-                  </div>
-                </div>
-          </div>
-        </section>
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
+      </div>          
+    </div>    
+    {% block content %}{% endblock content %}    
+  {% include 'footer.html' %}
   <script type="text/javascript" src="{% static 'assets/js/jquery-3.4.1.min.js' %}"></script>
-  <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script>
-  <!--<script type ="text/javascript" a href= "https://unpkg.com/@popperjs/core@2"></script>-->
-
- 
+  <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script> 
 </body>
 
 </html>

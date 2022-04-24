@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}<title>Learnlogix - e Learning with Logical Approach</title>{% endblock title %}
 {% block content %}
 <section class="hero_section ">
   <div class="hero-container container">
@@ -253,7 +254,9 @@
             </div>
             <form action="">
               <div class="contact_form-container">
+                {% csrf_token %}
                 <div>
+                  
                   {{leads}}
                   <div class="mt-5">
                     <button type="submit">
