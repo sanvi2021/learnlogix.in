@@ -32,9 +32,14 @@ body {
   color: #262627;
   font-weight: 600;
   transition: all 0.3s ease 0s;
+  border-color: white;
+
+}
+.hero_section .call_to-btn {
+  border-color:rgb(203, 203, 203)
 }
 
-.hero_section .call_to-btn {}
+
 
 .call_to-btn img {
   width: 18px;
@@ -269,14 +274,8 @@ a:focus {
   background-color: #fdd31d;
   color: #fefeff;
 }
-.Engineering_section .baction{
-  background-color: #fdd31d;
-  color: #fefeff;
-}
-.Engineering_section .caction{
-  background-color: #3a3a3a;
-  color: #fefeff;
-}
+
+
 
 /* end Engineering section */
 
@@ -588,4 +587,18 @@ a:focus {
   border-radius: 25px;
 }
 
-/* study-materials section */
+/* End study-materials section */
+/* modal class css */
+.modal-header{
+  color: #151516;
+  font-family: 'Poppins', sans-serif;
+}
+.modal-body{
+  color: #151516;
+  font-family: 'Poppins', sans-serif;
+}
+.modal-footer{
+  color: #151516;
+  font-family: 'Poppins', sans-serif;
+}
+/* end modal class css */

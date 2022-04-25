@@ -16,11 +16,15 @@ class landing_pageleads(forms.ModelForm):
         model = landing_pageRegistrationForm
         fields = ['name','email','phone']
         labels = {'name': 'Name', 'email': 'Email id','phone':'Phone Number'}
+        error_messages = {  'name':{'required':'Please enter your full name'},
+                            'email':{'required':'Please enter the email id'},
+                            'phone':{'required':'Please Enter valid Mobile number eg. +911234567899'}
+        }
         
         widgets = {
                     'name': forms.TextInput(attrs={'class':'form-control','placeholder':'Enter Candidate name'}),
                     'email': forms.TextInput(attrs={'class':'form-control','placeholder':'Enter Correct Email Id'}),
-                    'phone': forms.TextInput(attrs={'class':'form-control'}),
+                    'phone': forms.TextInput(attrs={'class':'form-control','placeholder':'+910000000000'}),
                     
         }
         phone = PhoneNumberField(widget = PhoneNumberPrefixWidget(initial='IN'))

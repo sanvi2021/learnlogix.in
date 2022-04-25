@@ -1,6 +1,6 @@
 from operator import imod
 from unicodedata import name
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from .forms import landing_pageleads
 from .models import landing_pageRegistrationForm
 
@@ -30,7 +30,23 @@ def scholarships(request):
 
 def buycourse(request):
       return render(request,'course.html')
-    
+
+def about(request):
+      return render(request,'about.html')
+
+def career(request):
+      return render(request,'career.html')
+
+def child(request):
+      return render(request,'child.html')
+
+def privacy(request):
+      return render(request,'privacy.html')
+def termscondition(request):
+      return render(request,'termsandcondition.html')
+def contact(request):
+      return render(request,'contact.html')
+       
     
 
 

@@ -24,6 +24,12 @@ urlpatterns = [
     path('studymaterials/',views.studymat,name="study_materials"),
     path('scholarships/',views.scholarships, name="scholarships"),
     path('course/',views.buycourse,name="buy_a_course"),
+    path('about/', views.about, name = "about"),
+    path('career/',views.career,name="career"),
+    path('child/',views.child,name ="child"),
+    path('privacypolicy/',views.privacy, name ="privacy"),
+    path('termscondition/',views.termscondition, name="termscondition"),
+    path('contact/',views.contact,name='contact'),
     
     
     
