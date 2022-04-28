@@ -28,7 +28,7 @@ body {
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #5a5757;
+  background-color: #ffffff;
   color: #262627;
   font-weight: 600;
   transition: all 0.3s ease 0s;
@@ -36,8 +36,7 @@ body {
 
 }
 .hero_section .call_to-btn {
-  border-color:rgb(255, 255, 255);
-  background-color:#262627;
+  border-color:rgb(203, 203, 203)
 }
 
 
@@ -526,7 +525,6 @@ a:focus {
   text-transform: uppercase;
 }
 
-
 .social_container {
   width: 90%;
   margin: 0 auto;
@@ -597,10 +595,6 @@ a:focus {
 }
 .modal-body{
   color: #151516;
-  font-family: 'Poppins', sans-serif;
-}
-.modal-body span.error_messages{
-  color: red;
   font-family: 'Poppins', sans-serif;
 }
 .modal-footer{

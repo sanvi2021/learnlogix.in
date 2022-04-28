@@ -1,3 +1,5 @@
+<!-- {% load static %}-->
+<!-- <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script> -->
 <div class="">
     <!-- Button trigger modal -->
         <button type="button" class="call_to-btn btn_white-border" data-toggle="modal" data-target="#exampleModal">
@@ -14,14 +16,27 @@
   </button>
 </div>
 <div class="modal-body">
-  {{leads}}
+  <form action = "" method = "POST" novalidate>
+  {% csrf_token %}
+  {{form.non_feild_errors}}
+  {% for feild  in leads  %}
   
+  {{feild.label_tag}} {{feild}}
+    {% for error in feild.errors  %}
+    <span class = "error_messages">{{error}}<span>
+    {% endfor %}
+  {% endfor %}
+
+  <div class="modal-footer">
+    <button type="button" class="call_to-btn btn_white-border" data-dismiss="modal">Close</button>
+    <input type = "submit" class ="call_to-btn btn_white-border" value = "Submit">    
+  </div>   
+  </form>  
 </div>
-<div class="modal-footer">
-  <button type="button" class="call_to-btn btn_white-border" data-dismiss="modal">Close</button>
-  <button type="button" class="call_to-btn btn_white-border">Submit</button>
-</div>
+
 </div>
 </div>
 </div>
       </div>
+
+     

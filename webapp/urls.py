@@ -17,6 +17,7 @@ from unicodedata import name
 from django.contrib import admin
 from django.urls import path
 from website import views
+from downloads import views as v2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +31,7 @@ urlpatterns = [
     path('privacypolicy/',views.privacy, name ="privacy"),
     path('termscondition/',views.termscondition, name="termscondition"),
     path('contact/',views.contact,name='contact'),
+    path('blog/downloads/',v2.download, name ='downloads'),
     
     
     

@@ -14,7 +14,9 @@
         Get trained by subject experts online and get access to unlimited source of knowledge..
       </p>
       <div class="hero_btn-continer">
-        {% include 'form.html' %}        
+        
+       {% include 'form.html' %}
+             
       </div>
     </div>
     <div class="hero_img-container">
@@ -229,22 +231,23 @@
           <div class ="col-md-6">
             <div class="d-flex justify-content-center d-md-block">
               <h2>
-                Register Now
+                <center>Register Now</center>
               </h2>
             </div>
-            <form action="">
+            <form action="" method="POST" novalidate>
               <div class="contact_form-container">
                 {% csrf_token %}
-                <div>
-                  
-                  {{leads}}
+                {{form.non_feild_errors}}
+                  {% for feild in leads %}
+                  {{feild.label_tag}}{{feild}}
+                    {% for error  in feild.error  %}
+                    <span class = "error_messages">{{error}}</span>                  
+                    {% endfor %}                  
+                  {% endfor %}
                   <div class="mt-5">
-                    <button type="submit">
-                      send
-                    </button>
-                                     
-                  </div>
-                </div>
+                    <input type="submit" value ="submit">
+                                                        
+                  </div>            
       
               </div>
       

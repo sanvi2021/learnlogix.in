@@ -9,10 +9,10 @@ from .models import landing_pageRegistrationForm
 from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 
-class landing_pageleads(forms.ModelForm): 
-   
-
-    class Meta:
+class landing_pageleads(forms.ModelForm):
+     error_css_class = 'error'
+     required_css_class ='required'
+     class Meta:
         model = landing_pageRegistrationForm
         fields = ['name','email','phone']
         labels = {'name': 'Name', 'email': 'Email id','phone':'Phone Number'}

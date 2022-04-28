@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'phonenumber_field',
+    #'bootstrap_modal_forms',
+    'downloads',
 ]
 
 MIDDLEWARE = [

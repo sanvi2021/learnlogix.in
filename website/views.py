@@ -15,8 +15,10 @@ def landing_page(request):
                   phone = leads.cleaned_data['phone']
                   lead = landing_pageRegistrationForm(name=name, email=email, phone=phone)
                   lead.save()
-                  leads = landing_pageleads()
-            print('===== Information is captured======')
+                  return HttpResponseRedirect('/')
+            else:
+                  print('Incorrect data, not saved to db')
+
       else:
             leads = landing_pageleads()
       return render(request,'index.html',{"leads":leads})
