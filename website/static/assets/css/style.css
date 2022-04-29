@@ -28,7 +28,7 @@ body {
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #5a5757;
+  background-color: #7f7f7f4d;
   color: #262627;
   font-weight: 600;
   transition: all 0.3s ease 0s;
@@ -36,9 +36,9 @@ body {
 
 }
 .hero_section .call_to-btn {
-  border-color:rgb(255, 255, 255);
-  background-color:#262627;
+  background-color:#ffffff;
 }
+
 
 
 
@@ -258,6 +258,10 @@ a:focus {
 /* academics section */
 .academics_section {
   text-align: right;
+}
+
+.academic_section .call_to-btn {
+  background-color:rgb(110, 188, 168)
 }
 
 .academics_section a {
