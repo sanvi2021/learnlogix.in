@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'website',
     'phonenumber_field',
     #'bootstrap_modal_forms',
-    'downloads',
+    'curriculum'
 ]
 
 MIDDLEWARE = [
